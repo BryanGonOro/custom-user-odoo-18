@@ -1,22 +1,22 @@
 <odoo>
   <data noupdate="1">
     <!-- Ocultar menú de Conversación -->
-    <record id="menu_discuss_root" model="ir.ui.menu">
+    <record id="menu_discuss_root" model="ir.ui.menu" forcecreate="0">
       <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
     </record>
 
     <!-- Ocultar menú de Aplicaciones -->
-    <record id="base.menu_apps" model="ir.ui.menu">
+    <record id="base.menu_apps" model="ir.ui.menu" forcecreate="0">
       <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
     </record>
 
     <!-- Ocultar menú de Configuración -->
-    <record id="base.menu_config" model="ir.ui.menu">
+    <record id="base.menu_config" model="ir.ui.menu" forcecreate="0">
       <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
     </record>
 
-    <!-- Ocultar menú de Ajustes Técnicos si visible -->
-    <record id="base.menu_administration" model="ir.ui.menu">
+    <!-- Ocultar menú de Administración -->
+    <record id="base.menu_administration" model="ir.ui.menu" forcecreate="0">
       <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
     </record>
   </data>
